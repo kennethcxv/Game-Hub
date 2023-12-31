@@ -22,3 +22,27 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+/build
+/dist
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor folders
+/.idea
+/.vscode
+/*.sublime-project
+/*.sublime-workspace
+
+# Misc
+.DS_Store
+Thumbs.db
