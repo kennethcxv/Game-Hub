@@ -1,13 +1,16 @@
 import { useState } from "react";
 
+// input passed to a component(cannot change over time)
 interface Props {
   items: string[];
   heading: string;
   onSelectItem: (item: string) => void;
 }
 
-function ListGroup({ items, heading, onSelectItem}: Props) {
-  // Hook(Function that allows to get built in functions in react)
+
+function ListGroup({ items, heading, onSelectItem }: Props) {
+  // Hook(useState)(Function that allows to get built in functions in react)
+  // State is data managed by a component(can change over time)
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
